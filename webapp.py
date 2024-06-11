@@ -13,16 +13,18 @@ import altair as alt
 import pickle
 import plotly.express as px
 
-video_frames = read_video('input_videos/white_yellow_input.mp4')
-with open('stubs/df.pkl', 'rb') as f:
-    dfs = pickle.load(f)
-
+st.set_page_config(page_title="Player Stats", layout="wide")
+@st.cache_data
+def df():
+    with open('stubs/df.pkl', 'rb') as f:
+        dfs = pickle.load(f)
+    return dfs
+dfs = df()
 df_velo_dis = dfs[0]
 df_possesion = dfs[1]
 df_possesion_n = dfs[2]
 
 
-st.set_page_config(page_title="Player Stats", layout="wide")
 st.markdown('# :fire: Elitify ')
 
 st.markdown('### Output')
