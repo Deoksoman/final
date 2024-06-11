@@ -1,0 +1,6 @@
+models/ball_pt_0602.pt filter=lfs diff=lfs merge=lfs -text
+models/best_key_point.pt filter=lfs diff=lfs merge=lfs -text
+models/yolov8x_player.pt filter=lfs diff=lfs merge=lfs -text
+input_videos/white_yellow_input.mp4 filter=lfs diff=lfs merge=lfs -text
+output_videos/draw_change.mp4 filter=lfs diff=lfs merge=lfs -text
+output_videos/no_draw_change.mp4 filter=lfs diff=lfs merge=lfs -text
