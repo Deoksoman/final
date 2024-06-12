@@ -75,7 +75,7 @@ with col2:
 
     st.altair_chart(chart, use_container_width=True)
 with col4:
-    st.markdown('### :runner: Distance coverd - 활동량')
+    st.markdown('### :runner: Distance covered - 활동량')
     user_input = st.text_input("스탯을 보고싶은 선수들의 번호를 입력해주세요 (쉼표로 구분):", "4, 5, 6, 7")
 
     # 입력받은 문자열을 리스트로 변환
